@@ -47,7 +47,10 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
 					alt="close"
 				/>
 			) : (
-				<img src={process.env.PUBLIC_URL + "/images/icons/add.png"} />
+				<img
+					src={process.env.PUBLIC_URL + "/images/icons/add.png"}
+					alt="open"
+				/>
 			)}
 		</Header>
 	);
