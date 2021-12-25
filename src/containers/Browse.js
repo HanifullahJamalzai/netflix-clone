@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header } from "../components/header";
 import * as ROUTES from "../constants/routes";
 import { FirebaseContext } from "../contexts/firebase";
-import { SelectProfileContainer } from "./profiles";
+import { SelectProfileContainer } from "./Profiles";
 import { FooterContainer } from "./Footer";
-import { useState } from "react/cjs/react.development";
 
 export function BrowseContainer() {
 	const [profile, setProfile] = useState({});
@@ -20,6 +19,6 @@ export function BrowseContainer() {
 			<FooterContainer />
 		</>
 	) : (
-		<SelectProfileContainer />
+		<SelectProfileContainer user={user} setProfile={setProfile} />
 	);
 }
