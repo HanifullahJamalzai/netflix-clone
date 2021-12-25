@@ -4,6 +4,7 @@ import { JumbotronContainer } from "../containers/Jumbotron";
 import { FooterContainer } from "../containers/Footer";
 import { HeaderContainer } from "../containers/Header";
 import { Feature, OptForm } from "../components";
+
 export default function Home() {
 	return (
 		<>
