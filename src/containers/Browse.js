@@ -6,6 +6,7 @@ import { SelectProfileContainer } from "./Profiles";
 import { FooterContainer } from "./Footer";
 
 export function BrowseContainer() {
+	const [searchTerm, setSearchTerm] = useState("");
 	const [category, setCategory] = useState("series");
 	const [profile, setProfile] = useState({ displayName: "Karla", photoURL: 1 });
 	const [loading, setLoading] = useState(true);
@@ -39,6 +40,12 @@ export function BrowseContainer() {
 						>
 							Films
 						</Header.Link>
+					</Header.Group>
+					<Header.Group>
+						<Header.Search
+							searchTerm={searchTerm}
+							setSearchTerm={setSearchTerm}
+						/>
 					</Header.Group>
 				</Header.Frame>
 
