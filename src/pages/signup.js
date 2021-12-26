@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { FirebaseContext } from "../contexts/firebase";
 import { HeaderContainer } from "../containers/Header";
 import { FooterContainer } from "../containers/Footer";
