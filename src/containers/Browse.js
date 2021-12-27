@@ -27,6 +27,7 @@ export function BrowseContainer() {
 	return profile.displayName ? (
 		<>
 			{loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
+
 			<Header src="joker1" dontShowOnSmallViewPort>
 				<Header.Frame>
 					<Header.Group>
